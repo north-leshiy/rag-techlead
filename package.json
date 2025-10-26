@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "pdf": "shower pdf",
+    "serve": "shower serve",
+    "archive": "shower archive",
+    "bundle": "shower bundle",
+    "publish": "shower publish"
+  },
+  "dependencies": {
+    "@shower/ribbon": "^3.5.2",
+    "@shower/core": "^3.3.0",
+    "@shower/material": "^2.5.1",
+    "highlight.js": "^11.11.1"
+  },
+  "devDependencies": {
+    "@shower/cli": "^0.3.1"
+  }
+}
