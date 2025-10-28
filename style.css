@@ -68,12 +68,12 @@
 }
 
 .slide.light {
-	background: url("./pictures/page@2x.svg") no-repeat;
+	background: url("./pictures/page.svg") no-repeat;
 	background-size: contain;
 }
 
 .slide.dark {
-	background: #000000 url("./pictures/page-black@2x.svg") no-repeat;
+	background: #000000 url("./pictures/page-black.svg") no-repeat;
 	background-size: contain;
 }
 
@@ -114,14 +114,30 @@
 
 
 /* MAIN PAGE */
+.slide-first {
+	color: #ffffff;
+	background: #000000 url("./pictures/face.svg") no-repeat;
+	background-size: cover;
+}
 .slide-first .author {
-	color: #ff5107;
-	font-size: 61px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 120%; /* 73.2px */
+	font-size: 30px;
+	margin-bottom: -10px;
+}
+.slide-first .company {
+	font-size: 20px;
 }
 
+.slide-first h2 {
+	max-width: 700px;
+	font-size: 35px;
+	color: #ffffff !important;
+	line-height: 130%;
+}
+
+.slide-first .main-title {
+	font-size: 60px;
+	margin-bottom: 20px;
+}
 
 /* END SLIDE */
 .slide-final {
