@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
     <link rel="stylesheet" href="style.css">
     <style>
+	    /*.diagram-wrapper {*/
+		/*    display: flex;*/
+		/*    justify-content: center;*/
+		/*    align-items: center;*/
+		/*    height: 400px;*/
+		/*    background: #fcfcf9;*/
+		/*    border-radius: 8px;*/
+		/*    padding: 3rem;*/
+		/*    overflow: visible;*/
+	    /*}*/
+
+	    /*!* Стилизация диаграмм Mermaid *!*/
+	    /*.mermaid {*/
+		/*    background: transparent !important;*/
+	    /*}*/
+
+	    /*.mermaid svg {*/
+		/*    max-width: 100%;*/
+		/*    height: auto;*/
+	    /*}*/
+
+	    /*!* Кастомные стили для элементов диаграмм *!*/
+	    /*.mermaid .node rect,*/
+	    /*.mermaid .node circle,*/
+	    /*.mermaid .node polygon {*/
+		/*    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));*/
+	    /*}*/
     </style>
 </head>
 <body class="shower list">
@@ -54,11 +81,80 @@
         <h2>О чем поговорим</h2>
         <ul>
             <li>Зачем нужен RAG</li>
-            <li>Типовые и продвинутые архитектуры</li>
-            <li>Поговорим по </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
         </ul>
     </section>
 
+    <section class="slide light">
+        <h2>Почему мы говорим о RAG на конференции для ТехЛидов</h2>
+        <ul>
+            <li>RAG &mdash; это архитектурный паттерн</li>
+            <li class="next">RAG будет внедряться в большое количество приложений и процессов в ближайшие годы</li>
+            <li class="next">Лиды должны понимать как это устроено и как встраивать этот паттерн в свои приложения</li>
+            <li class="next">Управление контекстом - одна из самых важных инженерных задач которую нам всем предстоит решать в ближайшие годы</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">В чьих<mark>ПРОЕКТАХ</mark> уже внедряются llm или планируются в обозримом будущем?</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">В чьих <mark>ПРОЦЕССАХ</mark> уже внедряются llm или планируются в обозримом будущем?</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Кто знает как строятся RAG системы?</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Кто внедрял уже RAG в свои проекты?</h2>
+    </section>
+
+    <section class="slide section">
+        <h2 class="shout">Зачем нужен RAG</h2>
+    </section>
+
+    <section class="slide section">
+          <div class="mermaid">
+              graph LR
+              A["Пользователь"] --- B["LLM (Модель)"]
+              style A fill:#eee,stroke:#aaa,width:140px
+              style B fill:#eee,stroke:#aaa,width:140px
+          </div>
+    </section>
+
+    <section class="slide">
+        <h2>Проблема нехватки контекста</h2>
+        <ul>
+            <li>LLM обучена на старых данных.</li>
+            <li>LLM не знает конкретно ваших данных (база знаний, информация о продуктах, о коде, о задачах, etc).</li>
+            <li>Дообучать модель сложно и дорого, к тому же данные могут быстро меняться.</li>
+            <li>Нехватка контекста ведет к повышенным галлюцинациям.</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Проблема нехватки контекста</h2>
+        <ul>
+            <li>LLM обучена на старых данных.</li>
+            <li>LLM не знает конкретно ваших данных (база знаний, информация о продуктах, о коде, о задачах, etc).</li>
+            <li>Дообучать модель сложно и дорого, к тому же данные могут быстро меняться.</li>
+            <li>Нехватка контекста ведет к повышенным галлюцинациям.</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>RAG</h2>
+        <ul>
+            <li>LLM обучена на старых данных.</li>
+            <li>LLM не знает конкретно ваших данных (база знаний, информация о продуктах, о коде, о задачах, etc).</li>
+            <li>Дообучать модель сложно и дорого, к тому же данные могут быстро меняться.</li>
+        </ul>
+    </section>
 
     <section class="slide slide-final">
 
@@ -72,6 +168,109 @@
 
     <script src="node_modules/@shower/core/dist/shower.js"></script>
     <!-- Copyright © 2025 Yours Truly, Famous Inc. -->
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        window.mermaid = mermaid;
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        // Инициализация с темой MermaidChart
+        // mermaid.initialize({
+        //     startOnLoad: true,
+        //     theme: 'base',
+        //     themeVariables: {
+        //         // Основные цвета - точно из MermaidChart
+        //         primaryColor: '#ffffff',
+        //         primaryTextColor: '#28253D',
+        //         primaryBorderColor: '#28253D',
+        //
+        //         // Линии и связи - темно-серые #28253D
+        //         lineColor: '#000000',
+        //
+        //         // Фон блоков - белый
+        //         mainBkg: '#ffffff',
+        //         secondBkg: '#F9F9FB',
+        //         tertiaryColor: '#ffffff',
+        //
+        //         // Текст - темно-серый #28253D
+        //         textColor: '#28253D',
+        //
+        //         // Границы - темно-серые #28253D, толщина 2px
+        //         border1: '#28253D',
+        //         border2: '#28253D',
+        //
+        //         // Узлы
+        //         nodeBorder: '#28253D',
+        //         clusterBkg: '#F9F9FB',
+        //         clusterBorder: '#BDBCCC',
+        //
+        //         // Фон меток - светло-серый
+        //         edgeLabelBackground: 'hsl(-120, 0%, 80%)',
+        //         labelBackgroundColor: 'rgba(204, 204, 204, 0.5)',
+        //
+        //         // Для диаграмм последовательности
+        //         actorBorder: '#28253D',
+        //         actorBkg: '#ffffff',
+        //         actorTextColor: '#28253D',
+        //         actorLineColor: '#28253D',
+        //         signalColor: '#000000',
+        //         signalTextColor: '#28253D',
+        //         loopTextColor: '#28253D',
+        //         activationBorderColor: '#28253D',
+        //         activationBkgColor: '#f0f0f0',
+        //         sequenceNumberColor: '#ffffff',
+        //
+        //         // Для диаграмм состояний
+        //         labelColor: '#28253D',
+        //         altBackground: '#F9F9FB',
+        //
+        //         // Для class диаграмм
+        //         classText: '#28253D',
+        //
+        //         // Для Gantt
+        //         gridColor: '#e0e0e0',
+        //         todayLineColor: '#ff0000',
+        //         taskBorderColor: '#28253D',
+        //         taskTextColor: '#28253D',
+        //         taskTextOutsideColor: '#28253D',
+        //
+        //         // Шрифты - точно как в MermaidChart
+        //         fontFamily: '"Recursive Variable", arial, sans-serif',
+        //         fontSize: '14px'
+        //     },
+        //     flowchart: {
+        //         useMaxWidth: true,
+        //         htmlLabels: true,
+        //         curve: 'linear',
+        //         padding: 30,
+        //         nodeSpacing: 50,
+        //         rankSpacing: 80
+        //     },
+        //     sequence: {
+        //         diagramMarginX: 50,
+        //         diagramMarginY: 10,
+        //         actorMargin: 50,
+        //         width: 150,
+        //         height: 65,
+        //         boxMargin: 10,
+        //         boxTextMargin: 5,
+        //         noteMargin: 10,
+        //         messageMargin: 35,
+        //         mirrorActors: true,
+        //         useMaxWidth: true
+        //     },
+        //     gantt: {
+        //         titleTopMargin: 25,
+        //         barHeight: 20,
+        //         barGap: 4,
+        //         topPadding: 50,
+        //         leftPadding: 75,
+        //         gridLineStartPadding: 35,
+        //         fontSize: 11,
+        //         numberSectionStyles: 4,
+        //         useMaxWidth: true
+        //     }
+        // });
+    </script>
 
 </body>
 </html>
