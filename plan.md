@@ -59,3 +59,15 @@ Disclamer
 
 ====================
 https://docs.google.com/presentation/d/19LC6sqq5bPk5Oq62y_k2Sk6_QekYtvEHZB33AJJC354/edit?slide=id.p13#slide=id.p13
+
+Более удачная схема.
+https://habr.com/ru/companies/raft/articles/875758/
+
+Взять слайд финальный
+https://north-leshiy.github.io/contract-first/?full#63
+
+===============
+Что сделать
+
+[] Результаты по продукту.
+[] емодзи вместо говно

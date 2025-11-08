@@ -15,6 +15,7 @@
 	--color-fill: rgb(88 90 94 / 10%);
 	--color-line: rgb(88 90 94 / 50%);
 	color: black;
+	font: 22px/2 'PT Sans', sans-serif;
 }
 
 .progress::before {
@@ -28,7 +29,13 @@
 }
 
 .shower h2.shout {
-	color: var(--color-orange);
+	font-size: 50px;
+	line-height: 120%;
+}
+
+.shower h2.shout.left {
+	text-align: left;
+	margin-left: 20px;
 }
 
 .fs50 {font-size: 50px !important;}
@@ -146,6 +153,14 @@
 	background-size: cover;
 }
 
+.slide-final p{
+	color: #ffffff;
+}
+
+.slide-final h2{
+	color: #ffffff;
+}
+
 .slide-final .slide-text {
 	margin-top: 50px;
 	font-size: 30px;
@@ -179,4 +194,19 @@
 	bottom: 20px;
 	left: 50px;
 	font-size: 30px;
+}
+
+/* SECTION */
+
+.section {
+	color: #ffffff;
+	background: #000000 url("./pictures/section.svg") no-repeat;
+	background-size: cover;
+	text-align: left;
+}
+
+.section h2.shout{
+	text-align: left !important;
+	margin-left: 20px;
+	color: #ffffff;
 }
