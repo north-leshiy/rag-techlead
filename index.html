@@ -85,23 +85,23 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2 class="shout left">В чьих <mark>ПРОЕКТАХ</mark> уже внедряются LLM или планируются в обозримом будущем?</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2 class="shout left">В чьих <mark>ПРОЦЕССАХ</mark> уже внедряются LLM или планируются в обозримом будущем?</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2 class="shout left">Кто знает, как строятся RAG-системы?</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2 class="shout left">Кто внедрял уже RAG в свои проекты?</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Цели доклада</h2>
         <ul>
             <li>В докладе мы лишь мельком затрагиваем продвинутые техники</li>
@@ -115,7 +115,7 @@
         <h2 class="shout">Зачем нужен RAG</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
 <!--        -&#45;&#45;-->
 <!--        config:-->
 <!--        layout: dagre-->
@@ -129,7 +129,7 @@
 
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Проблема нехватки контекста</h2>
         <ul>
             <li>LLM обучена на старых данных.</li>
@@ -139,7 +139,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Нужен контекст</h2>
 <!--        -&#45;&#45;-->
 <!--        config:-->
@@ -161,7 +161,7 @@
     </section>
 
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Внешние сервисы как источник контекста</h2>
 <!--        -&#45;&#45;-->
 <!--        config:-->
@@ -185,7 +185,7 @@
         <img src="pictures/user-external-context-llm.svg" class="place center" width="700" alt="">
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Типовые источники</h2>
         <ol>
             <li>
@@ -216,7 +216,7 @@
         </ol>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>RAG: retriever + generator</h2>
         <!--        -&#45;&#45;-->
         <!--        config:-->
@@ -246,7 +246,7 @@
         <img src="pictures/retriever-generator.svg" class="place center" width="700" alt="">
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Итого RAG</h2>
         <ul>
             <li>RAG = Retrieval-Augmented Generation.</li>
@@ -259,7 +259,7 @@
         <h2 class="shout">Кейсы RAG</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Кодовые агенты и автоматический Code Review</h2>
 
         <blockquote>
@@ -275,28 +275,28 @@
         <p><b>Ценность:</b> релевантные подсказки, меньше ошибок, ускорение ревью и онбординга.</p>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Быстрое извлечение знаний из корпоративных баз</h2>
         <p>Поиск информации в wiki, Confluence, Jira, Google Docs, email и др.</p>
         <p><b>Пример: </b>инженер спрашивает: «Как обновить staging?» — агент достаёт инструкцию из внутренней базы.</p>
         <p><b>Ценность: </b>мгновенный доступ к актуальным знаниям, сокращение времени поиска, снижение зависимости от «носителей знаний».</p>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Интеллектуальный поиск</h2>
         <p>Улучшенный поиск по смыслу, а не по ключевым словам.</p>
         <p><b>Пример: </b>«Игровая видеокарта до 100 000 рублей» → агент ищет релевантные товары, даже если в описании нет слова «игровая», и дает продвинутые рекомендации на основе данных LLM.</p>
         <p><b>Ценность: </b>повышает конверсию, улучшает UX, снижает количество «нулевых» поисковых запросов.</p>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>HelpDesk и поддержка клиентов</h2>
         <p>Автоматизация ответов на основе внутренних документов, FAQ и тикетов.</p>
         <p><b>Пример: </b>пользователь пишет «не могу войти в систему» — агент ищет инструкции и предлагает решение.</p>
         <p><b>Ценность: </b>меньше обращений к операторам, стандартизированные ответы, круглосуточная поддержка.</p>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Аналитика и суммаризация больших объемов информации</h2>
         <p>Автоматическое извлечение ключевых фактов из сотен документов, отчетов и публикаций.</p>
         <ul>
@@ -312,7 +312,7 @@
         <h2 class="shout">Погружение на примере внедрения RAG в базу знаний</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Вводные</h2>
         <ul>
             <li>ИТ компания - 150 человек</li>
@@ -327,7 +327,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Ограничения</h2>
         <ul>
             <li>Должны учитываться права доступа к базе знаний</li>
@@ -336,7 +336,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Outline</h2>
         <ul class="place right top" style="margin: 120px 30px 0 0;">
             <li><img src="pictures/github_icon.png" style="width: 30px; vertical-align: middle;" alt=""> 35К звезд на гитхабе</li>
@@ -352,7 +352,7 @@
         >
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Примеры запросов:</h2>
         <ul>
             <li>Как повысить грейд</li>
@@ -365,12 +365,12 @@
         <h2 class="shout">Проектируем Retriever</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Проектируем Retriever</h2>
         <img src="pictures/main-retriever.drawio.svg" alt="">
     </section>
 
-<!--    <section class="slide">-->
+<!--    <section class="slide light">-->
 <!--        <h2>Архитектурные вопросы:</h2>-->
 <!--        <table>-->
 <!--            <tbody>-->
@@ -398,7 +398,7 @@
 <!--        </table>-->
 <!--    </section>-->
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Выбираем способ выборки информации</h2>
         <ul>
             <li>Полнотекстовый поиск</li>
@@ -408,18 +408,18 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Векторный поиск на пальцах</h2>
         <img src="./pictures/main-ETL-to-vector-storage.drawio.svg" width="680" alt="">
     </section>
 
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Векторный поиск на пальцах</h2>
         <img src="./pictures/main-vector-search.drawio.svg" width="680" alt="">
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <ul style="position: relative; z-index: 1;">
             <li>Для трансформации text -> embedding нужно использовать Embedding Model</li>
             <li class="next">Вектор: набор чисел</li>
@@ -430,7 +430,7 @@
         <img src="pictures/How-Embeddings-Work.jpg" style="width: 700px; margin-top: -40px;" alt="">
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2 style="font-size: 39px;">Векторная БД не является источником истины</h2>
         <ul>
             <li>Векторная БД хранит только: embedding, ID, metadata</li>
@@ -451,7 +451,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Почему мы выбрали векторный поиск</h2>
         <ul>
             <li>Полнотекстовый поиск: были проблемы</li>
@@ -460,12 +460,12 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Адаптируем схему под векторный поиск</h2>
         <img src="pictures/main-retriever-vector.drawio.svg" style="margin-top: 20px;" alt="">
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Выбираем хранилище векторов (embedding)</h2>
         <ul>
             <li>Внешняя векторная База</li>
@@ -474,7 +474,7 @@
 <!-- @todo https://habr.com/ru/articles/961088/ -->
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Внешняя Векторная БД</h2>
         <ul>
             <li>Большой выбор open source решений с объемами векторов от 1M до 1B+.
@@ -486,7 +486,7 @@
         <!--        @todo логотипы векторных баз данных -->
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>PostgreSQL расширение (наш выбор)</h2>
         <ul>
             <li>Минусы: медленная индексация</li>
@@ -495,7 +495,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Индексы</h2>
         <ul>
             <li>HNSW</li>
@@ -503,7 +503,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Алгоритмы сравнения</h2>
         <ul>
             <li>Косинусное сходство (лучше для текстов)</li>
@@ -511,12 +511,12 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>PostgreSQL расширение (наш выбор)</h2>
         <img src="pictures/main-retriever-vector.drawio.svg" style="margin-top: 20px;" alt="">
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Выбираем Embedding model (encoder)</h2>
         <p>Факты про Embedding model:</p>
         <ul>
@@ -527,7 +527,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Выбираем Embedding model (encoder)</h2>
         <ul>
             <li>Базово выбираем по Massive Text Embedding Benchmark (MTEB) / ruMTEB</li>
@@ -538,7 +538,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Выбираем Embedding model (наш выбор)</h2>
         <p><b>OpenAI text-embedding-3-small 1536</b></p>
         <ul>
@@ -548,12 +548,12 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Выбираем Embedding модель (наш выбор)</h2>
         <img src="pictures/main-retriever-chunking.drawio.svg" style="margin-top: 20px;" alt="">
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Выбираем на чем писать пайплайн</h2>
         <ul>
             <li>LangChain/LangGraph — канон для большинства AI/Agentic/RAG приложений. Python + порт в TS.</li>
@@ -564,7 +564,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>LangChain (наш выбор)</h2>
         <img src="pictures/main-retriever-langchain.drawio.svg" style="margin-top: 20px;" alt="">
     </section>
@@ -593,7 +593,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Осмысленный чанкинг</h2>
         <ol>
             <li>Бизнес анализ: понимания доменную область разбивать чанки на необходимые сущности.</li>
@@ -606,7 +606,7 @@
         </ol>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Метаданные у чанков</h2>
         <p>Что можно хранить</p>
         <ul>
@@ -616,12 +616,12 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>LangChain + MarkDownSplitter</h2>
         <img src="pictures/main-retriever-chunking.drawio.svg" style="margin-top: 20px;" alt="">
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Фильтрация данных</h2>
         <ul>
             <li>В текстах могут быть данные, которые вы не хотите сливать <br> во внешние сервисы или внешние LLM.</li>
@@ -630,7 +630,7 @@
         <img src="pictures/presidio.gif" width="700" alt="">
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Обработка изменений</h2>
         <p>Чтобы не блокировать поток вынесли в отдельную таблицу-очередь</p>
         <ul>
@@ -640,18 +640,18 @@
     </section>
 
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Retriever</h2>
         <img src="pictures/main-retriever-filtering-presido.drawio.svg" style="margin-top: 20px;" alt="">
     </section>
 
-<!--    <section class="slide">-->
+<!--    <section class="slide light">-->
 <!--        <h2>Структура данных (упрощенно)</h2>-->
 <!--        <p>@todo показать схему</p>-->
 <!--    </section>-->
 
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Поиск</h2>
         <ul>
             <li>Выбираем по 4–5 чанков по 500 токенов каждый, суммарно до ~1.5–2k токенов контекста</li>
@@ -664,7 +664,7 @@
         <h2 class="shout">Generator</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Generator</h2>
         <ul>
             <li>Температуру оставили низкой: 0.0-0.2</li>
@@ -673,7 +673,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Generator: пример промпта</h2>
         <figure>
             <blockquote>
@@ -685,7 +685,7 @@
         </figure>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Generator: пример промпта</h2>
         <figure>
             <blockquote>
@@ -702,7 +702,7 @@
         </figure>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Generator: пример промпта</h2>
         <figure>
             <blockquote>
@@ -726,7 +726,7 @@
     </section>
 
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Query rewriting</h2>
         <ul>
             <li>Garbage in garbage out</li>
@@ -735,7 +735,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>HYDE — прием гипотетического ответа</h2>
         <ul>
             <li>С помощью LLM генерируем короткий ответ‑набросок на запрос</li>
@@ -744,7 +744,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Reranking</h2>
         <ul>
             <li>Выбираем топ-N кандидатов через вектор</li>
@@ -753,7 +753,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Context Window Enhancement</h2>
         <ul>
             <li>Выбираем соседние чанки из исходного документа для расширения контекста</li>
@@ -761,7 +761,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>CAG - кешируем ответы</h2>
         <ul>
             <li>Формируем быстрый кеш из ответов</li>
@@ -769,7 +769,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>RAG с памятью</h2>
         <ul>
             <li>Передаем в контекст не только текущий запрос пользователя, но и историю переписки</li>
@@ -777,7 +777,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Self RAG</h2>
         <ul>
             <li>Система гибко реагирует на запросы пользователя</li>
@@ -793,7 +793,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Agentic RAG</h2>
         <ul>
             <li>Даем Агенту тулы для поиска информации (API, вектор, БД, внешний поиск).</li>
@@ -802,7 +802,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Графовые подходы: GraphRAG | Light RAG | etc</h2>
         <ul>
             <li>Представление индекса в виде графа знаний позволяет учитывать контекст и сложные связи между информацией, улучшая качество поиска и генерации.</li>
@@ -820,7 +820,7 @@
         <h2 class="shout">Про тестирование, эксперименты и метрики</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Golden dataset</h2>
         <ul>
             <li>Составляем таблицу вопрос и ответ который мы ожидаем</li>
@@ -829,7 +829,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Ручное тестирование: генератор</h2>
         <p><b>Что тестируем: </b>Насколько сгенерированный ответ совпадает с ожидаемым</p>
         <ul>
@@ -837,7 +837,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Ручное тестирование: ретривер</h2>
         Что тестируем:
         <ul>
@@ -858,16 +858,16 @@
         </ol>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Наши эксперименты</h2>
         <ul>
             <li>На младшей модели OpenAI у нас большинство наших запросов было < 0.5 по совпадению с целевыми статьями. Повышение со small до large модели резко повысило качество.</li>
             <li class="next">Уперлись в лимит по PostgreSQL, он не позволяет хранить векторы 2000. Сделали 2000, старшая модель позволяет понижать размерность вектора</li>
-            <li>Экспериментировали с размером чанка, сделали его больше (500-1000)</li>
+            <li class="next">Экспериментировали с размером чанка, сделали его больше (500-1000)</li>
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Подходим более профессионально</h2>
         <p>RAGAS (python) — framework тестирования RAG-систем. Подключает внешнюю LLM для проверки корректности.</p>
         <p>Базовые метрики:</p>
@@ -880,7 +880,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>RAGAS</h2>
         <ul>
             <li>Чтобы сильно глубоко не погружаться в FW генерируем болванку скрипта через AI, правим точки вызова</li>
@@ -888,7 +888,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>RAGAS: пример оценки метрик</h2>
         <code>
         faithfulness....................... 0.8542 <br>
@@ -901,9 +901,7 @@
         <p>Ведем табличку для метрик при разных экспериментах.</p>
     </section>
 
-<!--  aefaef  -->
-
-    <section class="slide">
+    <section class="slide light">
         <h2>Что можно мерить в production</h2>
         <ul>
             <li>Latency (время ответа)</li>
@@ -918,7 +916,7 @@
         <h2 class="shout">Выводы</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Наши выводы и планы</h2>
         <ul>
             <li>Корпоративный бот по базе знаний выдает неплохой результат практически без улучшений.</li>
@@ -930,7 +928,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide light">
         <h2>Выводы</h2>
         <ul>
             <li>RAG &mdash; базовый паттерн в современном поиске и AI-приложениях</li>
