@@ -200,13 +200,13 @@
 
 .section {
 	color: #ffffff;
-	background: #000000 url("./pictures/section.svg") no-repeat;
+	background: #000000 url("./pictures/section.png") no-repeat;
 	background-size: cover;
-	text-align: left;
+	/*text-align: left;*/
 }
 
 .section h2.shout{
-	text-align: left !important;
+	/*text-align: left !important;*/
 	margin-left: 20px;
 	color: #ffffff;
 }
